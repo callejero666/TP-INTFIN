@@ -1,20 +1,20 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Principal } from './componentes/Principal';
 import { Login } from './componentes/Login';
 import { Registro } from './componentes/Registro';
-import { Principal } from './componentes/Principal';
+import { Navbar } from './componentes/Navbar';
 import './App.css';
-
 
 function App() {
     return (
         <Router>
-            <div className="App">
-                <Routes>
-                    <Route path="/" element={<Login />} />
-                    <Route path="/registro" element={<Registro />} />
-                    <Route path="/principal" element={<Principal />} />
-                </Routes>
-            </div>
+            <Navbar />
+            <Routes>
+                <Route path="/" element={<Principal />} />
+                <Route path="/principal" element={<Principal />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/registro" element={<Registro />} />
+            </Routes>
         </Router>
     );
 }

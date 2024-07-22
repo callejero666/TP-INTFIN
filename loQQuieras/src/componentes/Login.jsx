@@ -14,7 +14,7 @@ export function Login() {
 
     return (
         <section>
-            <h1>LO QUE QUIERAS</h1>
+            <h1>Iniciar Sesión</h1>
             <form className="Login" onSubmit={handleSubmit}>
                 <input type="text" placeholder="Username" />
                 <input type="password" placeholder="Password" />

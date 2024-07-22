@@ -6,8 +6,9 @@ export function Registro() {
 
     const handleRegistro = (e) => {
         e.preventDefault();
-        // mocificar que una vez registrado vuelva a login para iniciar sesion 
-        navigate('/');
+        // implementar lógica para registro
+        
+        navigate('/login');
     };
 
     return (
